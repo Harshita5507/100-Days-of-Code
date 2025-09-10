@@ -1,3 +1,4 @@
+//Write a program to check if a number is a palindrome.
 #include <stdio.h>
 int main() {
     int r,n,c,s=0;
@@ -7,9 +8,9 @@ int main() {
     c=n;
     while(n>0) 
     {
-        r=n%10;
-        s=r+(s*10);
-        n=n/10;
+        r=n%10;  // get last digit
+        s=r+(s*10); // build reversed number
+        n=n/10; // remove last digit
     }
     if(c==s) 
     {
@@ -22,4 +23,5 @@ int main() {
 
     return 0;
 }
+
 
