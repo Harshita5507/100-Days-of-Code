@@ -6,13 +6,14 @@ int main () {
     scanf("%d %d %d", &a , &b , &c);
 
     if (a==b && b==c && a==c){
-        printf("Equilateral triangle.");
+        printf("Equilateral triangle."); //checking condition for equality, i.e. if all are equal only then
     }
     else if (a==b || b==c ||a==c ){
-        printf("Equilateral triangle.");
+        printf("Equilateral triangle."); //checking condition for iscoseles triangle.
     }
     else {
         printf("Scalene triangle.");
     }
     return 0;
 }
+
