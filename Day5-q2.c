@@ -8,7 +8,7 @@ int main () {
     scanf("%d", &total_Seconds);
 
     hours= seconds/3600;
-    total_Seconds= total_Seconds % 3600;
+    total_Seconds= total_Seconds % 3600; // to find the remaining secs.
 
     minutes= total_Seconds/60;
     seconds= total_Seconds % 60;
@@ -17,3 +17,4 @@ int main () {
     
     return 0;
 }
+
