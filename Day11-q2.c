@@ -1,3 +1,6 @@
+//Write a program to find profit or loss percentage given cost price and selling price.
+
+
 #include <stdio.h>
 int main () {
     float CP,SP,loss,profit,percentage;
@@ -24,4 +27,5 @@ int main () {
     }
 
     return 0;
+
 }
