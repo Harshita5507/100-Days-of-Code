@@ -6,7 +6,7 @@ int main () {
     printf("Enter coefficients of a,b and c:  ");
     scanf("%d %d %d", &a, &b, &c);
 
-    discriminant=b^b- 4*a*c;
+    discriminant=b^b- 4*a*c; //formula for discriminant
 
     if (discriminant>0) {
        root1 = (-b + sqrt(discriminant)) / (2 * a);
@@ -27,3 +27,4 @@ int main () {
     return 0;
 
 }
+
