@@ -1,3 +1,4 @@
+//Write a program to calculate the factorial of a number.
 #include <stdio.h>
 int main() {
     int num,i,factorial=1;
@@ -20,4 +21,5 @@ int main() {
          printf("The factorial of num is %d: ", factorial);
 }
     return 0;
+
 }
