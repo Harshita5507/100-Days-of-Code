@@ -1,39 +1,25 @@
+//Write a program to check if a number is an Armstrong number.
 #include <stdio.h>
 int main() {
+    int num, originalNum, remainder, result = 0;
 
-    int num,prime,i;
-    printf("Enter a number: ");
+    printf("Enter a 3-digit number: ");
     scanf("%d", &num);
 
-    if (num<=1)
-    {
-        prime=0;
-    }
-    else if (num==2) 
-    {
-        prime=1;
-    }
-    else if (num%2==0)
-    {
-        prime=0;
-    }
-    else 
-    {
-        for (i=3; i<=num; i++)
-        {
-             if (num % i == 0) {
-                prime = 0;
-        }
-    }
-}
+    originalNum = num;
 
-    if (prime){
-    printf("Prime number");
+    // extract each digit, cube it, and add to result
+    while (originalNum != 0) {
+        remainder = originalNum % 10;      // get last digit
+        result += remainder * remainder * remainder;  // cube and add
+        originalNum /= 10;                 // remove last digit
     }
-    else {
-        printf("Not a prime number.");
-    }
+    // check if Armstrong
+    if (result == num)
+        printf("%d is an Armstrong number.\n", num);
+    else
+        printf("%d is not an Armstrong number.\n", num);
 
     return 0;
-
 }
+
