@@ -1,9 +1,9 @@
 //Reverse an array without taking extra space.
-#include <stdio.h>
+
 #include <stdio.h>
 
 int main() {
-    int i,,n,x;
+    int i,n,x;
     
     printf("enter the number of elements");
 
@@ -27,4 +27,5 @@ int main() {
     }
 
     return 0;
+
 }
