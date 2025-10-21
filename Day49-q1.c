@@ -3,24 +3,24 @@
 int main ()
 {
    char str1[100];
-   int i,j;
+   int i=0,j;
 
    printf("Enter your name: ");
-   scanf("%[\n]", str1);
+   scanf("%[^\n]", str1);
 
-   printf("Initials of your name: "); 
-
-   if (str1[i] != ' ')
-    printf("%c", str1[i]);
+   if (str1[0] != ' ' && str1[0] != '\n') {
+        printf("%c", str1[0]);
+    }
 
    while (str1[i] != '\0')
    {
       if (str1[i]== ' ' && str1[i+1] != ' ' && str1[i+1] != '\0' )
       {
-      printf("%c", str1[i+1]);
+      printf("%c", str1[i+1]); 
    }
 
    i++;
 }   
-    return 0;
+    printf("\n");
+    return 0; 
 }
