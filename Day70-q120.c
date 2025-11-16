@@ -1,4 +1,4 @@
-//Write a program to take a string input. Change it to sentence case.
+//Write a program to take a string input. Change it to sentence case. (file handling)
 #include <stdio.h>
 int main()
 {
@@ -6,7 +6,7 @@ int main()
     char str[50];
     printf("enter a a string");
     scanf("%[^\n]", &str);
-
+    
     
 
 
